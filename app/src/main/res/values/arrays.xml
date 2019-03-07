@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Project_NeedNum">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="Project_Direct">
+        <item>科研</item>
+        <item>比赛</item>
+        <item>创业</item>
+    </string-array>
+
+    <string-array name="Project_State">
+        <item>筹备</item>
+        <item>进行</item>
+        <item>完成</item>
+    </string-array>
+
+    <string-array name="Project_Type">
+        <item>进行中的项目</item>
+        <item>已完成的项目</item>
+    </string-array>
+
+    <string-array name="Project_Who">
+        <item>我发布的项目</item>
+        <item>我参与的项目</item>
+    </string-array>
+
+    <string-array name="Data_DataType">
+        <item>整合型资料</item>
+        <item>经验型资料</item>
+    </string-array>
+
+    <string-array name="Devote_Label">
+        <item>董事长</item>
+        <item>执行董事</item>
+        <item>总裁</item>
+        <item>副总裁</item>
+        <item>总监</item>
+        <item>副总监</item>
+        <item>高级经理</item>
+        <item>经理</item>
+        <item>主管</item>
+        <item>优秀员工</item>
+    </string-array>
+
+    <string-array name="Devote_Label_Color">
+        <item>#FF0000</item>
+        <item>#FF6347</item>
+        <item>#FF7256</item>
+        <item>#FF8247</item>
+        <item>#FF8C69</item>
+        <item>#FFAEB9</item>
+        <item>#FFBBFF</item>
+        <item>#CDB79E</item>
+        <item>#CDC0B0</item>
+        <item>#e1d4e1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <CheckBox
+            android:id="@+id/Favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/textView7"
+            android:text="收藏" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Title_name"
+            android:text="项目详情" />
+
+    </RelativeLayout>
+
+    <Widget.DynamicScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/DetailLayout">
+
+                    <TextView
+                        style="@style/DetailText"
+                        android:text="项目名称：" />
+
+                    <TextView
+                        style="@style/DetailTextRight"
+                        android:id="@+id/tv_ProjectName" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/DetailLayout">
+
+                    <TextView
+                        style="@style/DetailText"
+                        android:text="负责人　：" />
+
+                    <TextView
+                        android:id="@+id/tv_DutyPeople"
+                        style="@style/DetailTextRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/DetailLayout">
+
+                    <TextView
+                        style="@style/DetailText"
+                        android:text="指导老师：" />
+
+                    <TextView
+                        android:id="@+id/tv_Teacher"
+                        style="@style/DetailTextRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/DetailLayout">
+
+                    <TextView
+                        style="@style/DetailText"
+                        android:text="项目内容：" />
+
+                    <TextView
+                        android:id="@+id/tv_Content"
+                        style="@style/DetailTextRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/DetailLayout">
+
+                    <TextView
+                        style="@style/DetailText"
+                        android:text="项目类型：" />
+
+                    <TextView
+                        android:id="@+id/tv_ProjectType"
+                        style="@style/DetailTextRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/DetailLayout">
+
+                    <TextView
+                        style="@style/DetailText"
+                        android:text="项目状态：" />
+
+                    <TextView
+                        android:id="@+id/tv_ProjectState"
+                        style="@style/DetailTextRight" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="需求人员"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_Duty0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="职责0："
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_NeedNum0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/tv_Duty0"
+                            android:padding="5dp"
+                            android:text="人数 [x]"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_Join0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/ripple_yelow"
+                            android:text="申请"
+                            android:textColor="#fff"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_Duty1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="职责1："
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_NeedNum1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/tv_Duty1"
+                            android:padding="5dp"
+                            android:text="人数 [x]"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_Join1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/ripple_yelow"
+                            android:text="申请"
+                            android:textColor="#fff"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_Duty2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="职责2："
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_NeedNum2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/tv_Duty2"
+                            android:padding="5dp"
+                            android:text="人数 [x]"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_Join2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/ripple_yelow"
+                            android:text="申请"
+                            android:textColor="#fff"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_Duty3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="职责3："
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_NeedNum3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/tv_Duty3"
+                            android:padding="5dp"
+                            android:text="人数 [x]"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_Join3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/ripple_yelow"
+                            android:text="申请"
+                            android:textColor="#fff"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_Duty4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="职责4："
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_NeedNum4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/tv_Duty4"
+                            android:padding="5dp"
+                            android:text="人数 [x]"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_Join4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/ripple_yelow"
+                            android:text="申请"
+                            android:textColor="#fff"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_loadRaised"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_yelow"
+                android:padding="5dp"
+                android:text="该项目已开启众筹!\n点击加载"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/raisedViewPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </Widget.DynamicScrollView>
+
+</LinearLayout>

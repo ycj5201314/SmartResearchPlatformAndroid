@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edittext_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--<LinearLayout style="@style/Title_padding_blue" />-->
+
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <TextView
+            style="@style/Title_name"
+            android:text="发布项目" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--剥夺焦点-->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <LinearLayout style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="项目名称" />
+
+                <EditText
+                    android:id="@+id/Project_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="40字以内"
+                    android:maxLength="40"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="项目内容" />
+
+                <EditText
+                    android:id="@+id/Project_Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="center_vertical|right"
+                    android:hint="300字以内"
+                    android:maxLength="300"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="指导老师" />
+
+                <EditText
+                    android:id="@+id/Project_Teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="center_vertical|right"
+                    android:hint="填写指导老师的账号"
+                    android:maxLength="10"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/DetailLayout"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="项目类型" />
+
+                <Spinner
+                    android:id="@+id/sp_ProjectType"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:entries="@array/Project_Direct" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="需求人员"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="职责"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="需求人数"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Duty0"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="100"
+                            android:background="@drawable/edittext_bg"
+                            android:maxLength="15"
+                            android:paddingLeft="5dp" />
+
+                        <Spinner
+                            android:id="@+id/Project_NeedNum0"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/Project_NeedNum" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Duty1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="100"
+                            android:background="@drawable/edittext_bg"
+                            android:maxLength="15"
+                            android:paddingLeft="5dp"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/Project_NeedNum1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/Project_NeedNum"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Duty2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="100"
+                            android:background="@drawable/edittext_bg"
+                            android:maxLength="15"
+                            android:paddingLeft="5dp"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/Project_NeedNum2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/Project_NeedNum"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Duty3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="100"
+                            android:background="@drawable/edittext_bg"
+                            android:maxLength="15"
+                            android:paddingLeft="5dp"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/Project_NeedNum3"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/Project_NeedNum"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Duty4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="100"
+                            android:background="@drawable/edittext_bg"
+                            android:maxLength="15"
+                            android:paddingLeft="5dp"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/Project_NeedNum4"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/Project_NeedNum"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_AddProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/ripple_yelow"
+                    android:text="发布"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_AddRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ripple_lowgray"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

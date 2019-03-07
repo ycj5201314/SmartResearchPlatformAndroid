@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout style="@style/Title_padding_blue" />
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <TextView
+            style="@style/Title_name"
+            android:text="资料上传" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="资料名称" />
+
+            <EditText
+                android:hint="20字以内"
+                android:id="@+id/et_dataName"
+                style="@style/BG_null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:height="30dp"
+                android:maxLength="20" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="下载地址" />
+
+            <EditText
+                android:hint="云盘上传后填写链接"
+                android:id="@+id/et_downloadUrl"
+                style="@style/BG_null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:height="30dp"
+                android:maxLength="100" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="资料简介" />
+
+            <EditText
+                android:hint="100字以内"
+                android:id="@+id/et_dataBrief"
+                style="@style/BG_null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:height="30dp"
+                android:maxLength="50" />
+        </LinearLayout>
+
+        <RelativeLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="资料类型" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/Data_DataType" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="文档附件" />
+
+            <Button
+                android:id="@+id/btn_UploadDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ripple_lowgray"
+                android:padding="5dp"
+                android:text="选择文件(小于200KB)"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_Upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_yelow"
+            android:text="上传"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用说明" />
+
+            <TextView
+                android:id="@+id/tv_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:text="问题反馈" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="云盘跳转"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/yun360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:background="@drawable/ripple_lowgray"
+                android:onClick=""
+                android:text="360"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/yunbaidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:background="@drawable/ripple_lowgray"
+                android:text="百度"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/yunweiyun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:background="@drawable/ripple_lowgray"
+                android:text="微云"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/yunleshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:background="@drawable/ripple_lowgray"
+                android:text="乐视"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/yunyinxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:background="@drawable/ripple_lowgray"
+                android:text="隐形"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

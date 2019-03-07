@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout
+        android:id="@+id/Personal"
+        style="@style/Title_blue">
+
+        <Button
+            android:id="@+id/btn_Logout"
+            android:layout_width="70dp"
+            android:layout_height="41.2dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/logout" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <Widget.CircleImageView
+            android:id="@+id/FaceImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/Place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/Like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:maxLength="30"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp">
+
+                    <Button
+                        android:id="@+id/MyProject"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ripple_lowgray"
+                        android:text="我的项目                                                                           >"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/MyBrief"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_lowgray"
+                        android:text="我的简介                                                                           >"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/MyMessage"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_lowgray"
+                        android:text="我的动态                                                                           >"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/MyData"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_lowgray"
+                        android:text="我的贡献                                                                           >"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/MyWealth"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_lowgray"
+                        android:text="我的财产                                                                           >"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知"
+                        android:id="@+id/textView6"
+                        android:textColor="#000" />
+
+                    <ListView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/notification_list"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

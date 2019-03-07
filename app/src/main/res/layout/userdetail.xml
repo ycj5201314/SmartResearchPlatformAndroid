@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Title_name"
+            android:text="用户简介" />
+
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/btn_addFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ripple_yelow"
+            android:text="添加好友" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Widget.CircleImageView
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/face" />
+
+            <LinearLayout
+                style="@style/DetailLayout">
+
+                <TextView
+                    android:text="昵称:"
+                    style="@style/DetailText" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/DetailTextRight" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="性别:" />
+
+                <TextView
+                    style="@style/DetailTextRight"
+                    android:id="@+id/tv_sex" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="学校:" />
+
+                <TextView
+                    style="@style/DetailTextRight"
+                    android:id="@+id/tv_school"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="年龄:" />
+
+                <TextView
+                    style="@style/DetailTextRight"
+                    android:id="@+id/tv_age" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="擅长:" />
+
+                <TextView
+                    style="@style/DetailTextRight"
+                    android:id="@+id/tv_like" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="个人介绍:" />
+
+                <TextView
+                    style="@style/DetailTextRight"
+                    android:id="@+id/tv_selfBrief" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

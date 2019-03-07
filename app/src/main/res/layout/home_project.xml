@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout
+        android:id="@+id/Contacts"
+        style="@style/Title_blue">
+
+        <ImageButton
+            android:id="@+id/AddProject"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_bg_ring_add"
+            android:src="@drawable/add_img" />
+
+        <Switch
+            android:id="@+id/switch_raised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:checked="false"
+            android:text="仅众筹"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <Widget.AutoListView
+        android:id="@+id/ListView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+</LinearLayout>

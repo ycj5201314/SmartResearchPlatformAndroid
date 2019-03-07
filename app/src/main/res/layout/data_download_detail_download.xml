@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:id="@+id/popup_window"
+        android:background="@drawable/popwindow"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/title0"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="下载链接"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/title0"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="http://"
+            android:id="@+id/tv_url"
+            android:gravity="center"
+            android:background="@drawable/ripple_lowgray"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_url"
+            android:background="#0099ff"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="附件下载"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="xxx.doc"
+            android:id="@+id/tv_dataDoc"
+            android:gravity="center"
+            android:background="@drawable/ripple_lowgray"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_dataDoc"
+            android:background="#0099ff"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:background="@drawable/ripple"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/view2"
+            android:id="@+id/close"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="关闭"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</LinearLayout>

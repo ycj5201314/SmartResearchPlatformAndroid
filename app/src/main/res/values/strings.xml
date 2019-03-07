@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">创搜</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">无更多数据</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">Loading...</string>
+
+    <!-- 消除警告 -->
+    <string name="d">图片描述</string>
+
+    <!-- 路径 -->
+    <string name="docPath">/.partner/doc/</string>
+    <string name="imgPath">/.partner/faceimg/</string>
+
+    <!-- 网盘链接 -->
+    <string name="yun360">http://yunpan.360.cn/</string>
+    <string name="yunbaidu">http://yun.baidu.com/</string>
+    <string name="yunweiyun">http://www.weiyun.com/</string>
+    <string name="yunleshi">http://yun.letv.com/</string>
+    <string name="yunyinxing">http://www.jiamiyunpan.com/</string>
+</resources>

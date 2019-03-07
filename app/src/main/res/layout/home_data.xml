@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout
+        style="@style/Title_blue"
+        android:id="@+id/Propaganda" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="资料上传                                                                           >"
+            android:id="@+id/btn_DataUpload"
+            android:background="@drawable/ripple_lowgray"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="资料下载                                                                           >"
+            android:id="@+id/btn_DataDownload"
+            android:background="@drawable/ripple_lowgray"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="贡献排名       　　                                                            >"
+            android:id="@+id/btn_Devote"
+            android:background="@drawable/ripple_lowgray"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

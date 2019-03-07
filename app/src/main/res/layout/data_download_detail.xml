@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <TextView
+            style="@style/Title_name"
+            android:text="资料详情" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="资料名称:" />
+
+            <TextView
+                android:id="@+id/tv_dataName"
+                style="@style/DetailTextRight"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/DetailLayout">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="资料简介:" />
+
+            <TextView
+                android:id="@+id/tv_dataBrief"
+                style="@style/DetailTextRight" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                style="@style/DetailText"
+                android:text="评价内容:" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView7"
+            android:layout_weight="0.85"
+            style="@style/DetailLayout">
+
+            <TextView
+                android:id="@+id/tv_commentContent"
+                style="@style/DetailTextRight" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="有用　0"
+                    android:textColor="#396aff" />
+
+                <Button
+                    android:id="@+id/btn_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="无用　0"
+                    android:textColor="#ff0000" />
+
+                <Button
+                    android:id="@+id/btn_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="评论" />
+
+                <Button
+                    android:id="@+id/btn_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="举报" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_yelow"
+                android:text="下载" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

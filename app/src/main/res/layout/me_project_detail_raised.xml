@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <TextView
+            style="@style/Title_name"
+            android:text="加入众筹" />
+    </RelativeLayout>
+
+    <Widget.DynamicScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="项目名称:" />
+
+                <TextView
+                    android:id="@+id/tv_ProjectName"
+                    style="@style/DetailTextRight" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DetailLayout">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="目标金额:" />
+
+                <EditText
+                    android:id="@+id/et_target"
+                    style="@style/BG_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="达到目标金额则众筹成功"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:text="预设时间:" />
+
+                <Button
+                    android:id="@+id/btn_selectCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ripple"
+                    android:text="选择日期"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DetailText"
+                android:text="文字介绍" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_brief"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="top"
+                    android:hint="介绍一下该项目,500字以内"
+                    android:maxLength="500"
+                    android:minHeight="100dp"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/DetailText"
+                android:text="图片介绍" />
+
+            <Button
+                android:id="@+id/img_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/ripple"
+                android:padding="5dp"
+                android:text="添加图片(可添加长图)"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:id="@+id/imgLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                style="@style/DetailText"
+                android:text="支持与回报" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="支持资金" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="回报方式" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center"
+                        android:hint="金额"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/et_repay"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center"
+                        android:hint="给予支持者的回报"
+                        android:maxLength="200"
+                        android:singleLine="true"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_addRow"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ripple"
+                android:text="添加一档"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_sendRaised"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ripple_yelow"
+                android:text="发布众筹!"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </Widget.DynamicScrollView>
+
+</LinearLayout>

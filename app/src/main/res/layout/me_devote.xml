@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/Title_padding_blue" />
+
+    <RelativeLayout style="@style/Title_blue">
+
+        <Widget.Back
+            android:id="@+id/btn_back"
+            style="@style/Back" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Title_name"
+            android:text="我的贡献" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_Search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center"
+        android:hint="搜索资料名称/简介"
+        android:imeOptions="actionSearch"
+        android:maxLength="10"
+        android:singleLine="true" />
+
+    <Widget.AutoListView
+        android:id="@+id/ListView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+</LinearLayout>
